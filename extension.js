@@ -1,8 +1,8 @@
 (function () {
-    
+
     //Change this to your GitHub username so you don't have to modify so many things.
     var fork = "Yemasthui";
-		
+
     //Define our function responsible for extending the bot.
     function extend() {
         //If the bot hasn't been loaded properly, try again in 1 second(s).
@@ -63,6 +63,7 @@
         startupVolume: 0, // 0-100
         startupEmoji: false, // true or false
         autowoot: true,
+        autoskip: false,
         smartSkip: true,
         cmdDeletion: true,
         maximumAfk: 120,
@@ -119,6 +120,6 @@
     }));
 
     //Start the bot and extend it when it has loaded.
-    $.getScript("https://rawgit.com/Puukjeens/Heal-Roboti-/master/basicBot.js", extend);
+    $.getScript("https://rawgit.com/Yemasthui/basicBot/master/basicBot.js", extend);
 
 }).call(this);
